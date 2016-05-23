@@ -1,5 +1,5 @@
 <?php
-	$dbconn = pg_connect("ec2-54-243-202-113.compute-1.amazonaws.com port=5432 dbname=dacqc1kplgok5f user=kuzrdpmzrwfkum password=hyyrZHM7CA5zpGvpJ5PkBg2aNl sslmode=require options='--client_encoding=UTF8'") or die('Could not connect: ' . pg_last_error());
+	$dbconn = pg_connect("ec2-54-243-202-113.compute-1.amazonaws.com port=5432 dbname=dacqc1kplgok5f user=kuzrdpmzrwfkum password=hyyrZHM7CA5zpGvpJ5PkBg2aNl") or die('Could not connect: ' . pg_last_error());
 
 $query = 'SELECT * FROM votes';
 $result = pg_query($query) or die('Query failed: ' . pg_last_error());
